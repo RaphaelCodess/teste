@@ -1,0 +1,95 @@
+/* Estilos gerais */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather', serif;
+    background: linear-gradient(to right, #cbece3, #87CEFA);
+    text-align: center;
+    color: #333;
+}
+
+/* Container dos produtos */
+.produtos-container {
+    padding: 40px 20px;
+}
+
+/* Título da página de produtos */
+h1 {
+    font-size: 36px;
+    color: #007B7F;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Container com a imagem e descrição de cada produto */
+.produto-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Imagem do produto */
+.produto-imagem {
+    max-width: 400px;
+    width: 100%;
+    margin-right: 20px;
+}
+
+/* Descrição do produto */
+.produto-descricao {
+    max-width: 600px;
+    text-align: left;
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
+}
+
+.produto-descricao h2 {
+    font-size: 24px;
+    margin-top: 10px;
+    color: #007B7F;
+}
+
+.produto-descricao h3 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.produto-descricao ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.produto-descricao ul li {
+    margin: 5px 0;
+}
+
+/* Mensagem de "Disponível em breve" */
+.disponibilidade {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #FF6347; /* Tom de vermelho para indicar que está em breve */
+    font-weight: bold;
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 768px) {
+    .produto-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .produto-imagem {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .produto-descricao {
+        padding: 15px;
+    }
+}
