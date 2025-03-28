@@ -56,12 +56,28 @@ nav ul li {
     font-family: 'Montserrat', sans-serif;
 }
 
-#canais a {
-    color:  #007B7F;/* Azul padrão */
-    font-weight: bold;
+/* Garante que todos os links tenham a mesma cor */
+a {
+    color: #007B7F;/* Escolha uma cor padrão */
     text-decoration: none;
 }
 
+a:visited {
+    color: #007B7F; /* Mantém a cor ao ser visitado */
+}
+
+a:hover {
+    color: #007B7F;/* Cor ao passar o mouse */
+}
+
+a:active {
+    color: #007B7F; /* Cor ao clicar */
+}
+
+/* Estiliza os links externos especificamente */
+#canais a {
+    color: #007b7f !important; /* Garante que a cor seja aplicada */
+}
 
 nav a {
     text-decoration: none;
