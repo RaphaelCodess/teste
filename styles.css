@@ -57,25 +57,25 @@ nav ul li {
 }
 
 #canais a {
-    color: #007bff; /* Azul padrão */
+    color:  #007B7F;/* Azul padrão */
     font-weight: bold;
     text-decoration: none;
 }
 
 /* Muda a cor quando passa o mouse */
 #canais a:hover {
-    color: #042122;/* Azul mais escuro */
+    color:  #007B7F;/* Azul mais escuro */
     text-decoration: underline;
 }
 
 /* Muda a cor quando o link já foi visitado */
 #canais a:visited {
-    color: #007B7F; /* Roxo */
+    color:  #007B7F; /* Roxo */
 }
 
 nav a {
     text-decoration: none;
-    color: #007B7F;
+    color:  #007B7F;
     font-family: 'Montserrat', sans-serif;
 }
 li{
