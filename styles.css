@@ -62,16 +62,6 @@ nav ul li {
     text-decoration: none;
 }
 
-/* Muda a cor quando passa o mouse */
-#canais a:hover {
-    color:  #007B7F;/* Azul mais escuro */
-    text-decoration: underline;
-}
-
-/* Muda a cor quando o link já foi visitado */
-#canais a:visited {
-    color:  #007B7F; /* Roxo */
-}
 
 nav a {
     text-decoration: none;
