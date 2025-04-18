@@ -1,178 +1,106 @@
-/* Aplicando a fonte para todo o corpo do site */
+/* Fonte e cor base */
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Merriweather', serif;
-    background: linear-gradient(to right, #cbece3, #87CEFA);
-    text-align: center;
-    color: #333;
-}
-
-/* Tela de introdução com o slogan e logo abaixo */
-#intro {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    animation: fadeIn 2s ease-in-out;
-}
-
-.slogan {
-    font-size: 50px;
-    color: #007B7F;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-}
-
-.logo {
-    width: 350px;
-    height: auto;
-    margin-top: 10px;
-}
-
-/* Esconder conteúdo principal até a transição */
-.hidden {
-    display: none;
-}
-
-/* Estilos gerais do site */
-header {
-    background: rgba(255, 255, 255, 0.9);
-    padding: 20px;
-    font-family: 'Montserrat', sans-serif;
-}
-
-
-nav ul {
-    list-style: none;
-    padding: 0;
-	
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 80px;
-    font-family: 'Montserrat', sans-serif;
-}
-
-/* Garante que todos os links tenham a mesma cor */
-a {
-    color: #007B7F;/* Escolha uma cor padrão */
-    text-decoration: none;
-}
-
-a:visited {
-    color: #007B7F; /* Mantém a cor ao ser visitado */
-}
-
-a:hover {
-    color: #007B7F;/* Cor ao passar o mouse */
-}
-
-a:active {
-    color: #007B7F; /* Cor ao clicar */
-}
-
-/* Estiliza os links externos especificamente */
-#canais a {
-    color: #007b7f !important; /* Garante que a cor seja aplicada */
-}
-
-nav a {
-    text-decoration: none;
-    color:  #007B7F;
-    font-family: 'Montserrat', sans-serif;
-}
-li{
+	margin: 0;
+	padding: 0;
+	font-family: 'Merriweather', serif;
+	background: linear-gradient(to right, #cbece3, #87CEFA);
+	color: #333;
+  }
+  
+  /* Tela de introdução */
+  #intro {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+  }
+  
+  .slogan {
+	font-size: 50px;
 	color: #007B7F;
-}
-.content-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 20px;
-}
-
-section {
-    width: 100%;
-    max-width: 600px;
-    padding: 20px;
-    text-align: left;
-    font-family: 'Merriweather', serif;
-    font-size: 18px;
-    margin-bottom: 20px;
-}
-
-/* Ajustando o footer */
-footer {
-    background: rgba(255, 255, 255, 0.8);
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    font-family: 'Lora', serif;
-    font-size: 16px;
-}
-
-/* Animação de fade-in */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Responsividade para telas pequenas (celulares) */
-@media (max-width: 768px) {
-    /* Ajuste na exibição das seções */
-    .content-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    section {
-        width: 90%;
-        margin: 10px 0;
-    }
-
-    .slogan {
-        font-size: 35px;
-    }
-
-    .logo {
-        width: 200px;
-    }
-
-    h1, h2 {
-        font-size: 22px;
-    }
-
-    footer {
-        font-size: 14px;
-    }
-}
-
-/* Responsividade para telas muito pequenas (como smartphones compactos) */
-@media (max-width: 480px) {
-    .slogan {
-        font-size: 28px;
-    }
-
-    .logo {
-        width: 180px;
-    }
-
-    h1, h2 {
-        font-size: 20px;
-    }
-
-    footer {
-        font-size: 12px;
-    }
-}
+	font-family: 'Poppins', sans-serif;
+  }
+  
+  .logo {
+	width: 350px;
+	margin-top: 20px;
+  }
+  
+  /* Oculta o conteúdo principal até a logo aparecer */
+  .hidden {
+	display: none;
+  }
+  
+  /* Cabeçalho */
+  header {
+	background: rgba(255, 255, 255, 0.9);
+	padding: 20px;
+	text-align: center;
+  }
+  
+  nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 20px 0 0 0;
+  }
+  
+  nav ul li {
+	margin: 10px 0;
+  }
+  
+  nav a {
+	color: #007B7F;
+	font-family: 'Montserrat', sans-serif;
+	text-decoration: none;
+  }
+  
+  /* Container dos tópicos: um abaixo do outro */
+  .content-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 40px 20px;
+	gap: 40px;
+  }
+  
+  /* Cada seção */
+  section {
+	width: 100%;
+	max-width: 800px;
+	background-color: #fff;
+	border-radius: 10px;
+	padding: 25px;
+	text-align: left;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	font-size: 18px;
+  }
+  
+  /* Footer fixo */
+  footer {
+	background: rgba(255, 255, 255, 0.8);
+	text-align: center;
+	padding: 15px;
+	font-family: 'Lora', serif;
+	position: relative;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 768px) {
+	.slogan {
+	  font-size: 35px;
+	}
+  
+	.logo {
+	  width: 200px;
+	}
+  
+	nav ul li {
+	  margin: 5px 0;
+	}
+  
+	section {
+	  padding: 20px;
+	}
+  }
